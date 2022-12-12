@@ -1,5 +1,29 @@
 @charset "utf-8";
 
+/* リセットCSS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+html {
+	font-size: 62.5%;
+}
+
 /*
 メモ
 
@@ -13,3 +37,140 @@ font-family: 'Noto Sans JP', sans-serif;  用意されているウェイトは40
 #FFE0CC ... 肌色（背景）
 */
 
+.wrapper {
+	width: 960px;
+	margin: 0px auto;
+}
+
+header {
+	padding: 20px;
+	background: #594736;
+}
+
+header .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header h1 {
+	color: #FFFCF9;
+	font-family: 'Kosugi Maru', sans-serif;
+	font-size: 2.4rem;
+}
+
+header ul {
+	display: flex;
+	width: calc(960px * 3 / 4);
+		/* ulはheader(960px)を４等分したものの３つ分の幅となるので、
+			960px の3/4の大きさとする */
+	justify-content: space-between;
+}
+
+header li a {
+	padding: 0.4rem 1rem;
+	background: #FFFCF9;
+	border-radius: 3px;
+	font-size: 1.6rem;
+	color: #594736;
+	text-decoration: none;
+}
+
+article header {
+	height: 600px;
+	background: #FFE0CC;
+	color: #594736;
+	display: flex;
+	align-items: center;			/* 縦中央 */
+	justify-content: space-around;	/* 横中央 */
+}
+
+h2 {
+	font-family: 'Kosugi Maru', sans-serif;
+	font-size: 3.6rem;
+	font-weight: bold; /* 700 */
+}
+
+h3 {
+	font-family: 'Kosugi Maru', sans-serif;
+	font-size: 2.4rem;
+	font-weight: normal; /* 400 */
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.works {
+	text-align: center;
+}
+
+.works ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.works ul li {
+	width: 300px;
+	text-align: left;
+	font-size: 1.4rem;
+}
+
+.works ul li h4 {
+	margin-top: 5px;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.about {
+	text-align: center;
+}
+
+.about .item {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.about .item .description {
+	text-align: left;
+	font-size: 1.4rem;
+}
+
+.about .item .description h4 {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.other {
+	text-align: center;
+}
+
+.other ul {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+}
+
+footer {
+	margin-top: 100px;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	background: #594736;
+	color: #FFFCF9;
+}
+
+footer .wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+footer a {
+	text-decoration: none;
+	color: #FFFCF9;
+	font-size: 14px;
+}
+
+footer small {
+	font-size: 14px;
+}

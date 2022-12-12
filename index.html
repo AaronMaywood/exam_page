@@ -4,28 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Sample site</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!-- 以下の３行はGoogle Fontsの読み込み -->
+	<!-- 以下の３行はGoogle Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@400;700&display=swap">
 </head>
 <body>
 	<header>
-		<h1>LOGO</h1>
-		<nav>
-			<ul>
-				<li><a href="#works">WORKS</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#other">OTHER</a></li>
-			</ul>
-		</nav>
+		<div class="wrapper">
+			<h1>LOGO</h1>
+			<nav>
+				<ul>
+					<li><a href="#works">WORKS</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#other">OTHER</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
 		<article>
 			<header>
 				<h2>SAMPLE SITE</h2>
 			</header>
-			<section>
+			<section class="works wrapper">
 				<h3>WORKS</h3>
 				<ul>
 					<li>
@@ -75,14 +77,18 @@
 					</li>
 				</ul>
 			</section>
-			<section>
+			<section class="about wrapper">
 				<h3>about</h3>
-				<p><img src="img/dummy.jpg" alt="人物のダミー画像" width="300" height="300"></p>
-				<h4>苗字 名前</h4>
-				<p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-				</p>
+				<div class="item">
+					<p><img src="img/dummy.jpg" alt="人物のダミー画像" width="300" height="300"></p>
+					<div class="description">
+						<h4>苗字 名前</h4>
+						<p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+						</p>
+					</div>
+				</div>
 			</section>
-			<section>
+			<section class="other wrapper">
 				<h3>other</h3>
 				<ul>
 					<li><img src="img/dummy-bn.jpg" alt="メールアドレスの画像" width="300" height="50"></li>
@@ -92,14 +98,16 @@
 		</article>
 	</main>
 	<footer>
-		<nav>
-			<ul>
-				<li><a href="#works">WORKS</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#other">OTHER</a></li>
-			</ul>
-		</nav>
-		<small>&copy; 2022 name</small>
+		<div class="wrapper">
+			<nav>
+				<ul>
+					<li><a href="#works">WORKS</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#other">OTHER</a></li>
+				</ul>
+			</nav>
+			<small>&copy; 2022 name</small>
+		</div>
 	</footer>
 </body>
 </html>
