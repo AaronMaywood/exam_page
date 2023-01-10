@@ -39,7 +39,7 @@ font-family: 'Noto Sans JP', sans-serif;  用意されているウェイトは40
 
 .wrapper {
 	width: 960px;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
 header {
