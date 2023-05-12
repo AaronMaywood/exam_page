@@ -77,7 +77,7 @@ header li a {
 	text-decoration: none;
 }
 
-article header {
+section.main header {
 	height: 600px;
 	background: #FFE0CC;
 	color: #594736;
